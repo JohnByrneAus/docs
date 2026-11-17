@@ -5,7 +5,7 @@ const path = require('path');
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1600, height: 1000 }, deviceScaleFactor: 2 });
-  for (const name of ['assessors-sketchnote', 'admin-team-sketchnote']) {
+  for (const name of ['assessors-sketchnote', 'admin-team-sketchnote', 'action-plan-sketchnote']) {
     await page.goto('file://' + path.join(__dirname, name + '.html'));
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(500);

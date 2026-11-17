@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ACTION PLAN</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=Permanent+Marker&display=swap');
+:root{--ink:#222;--paper:#fbf8f1;--y:#ffe27a;--b:#a9d8f5;--g:#b9e8a3;--p:#f7b6c8;--o:#ffc98b;--v:#d4c2f5;--r:#ff8f8f}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font-family:'Patrick Hand',cursive;width:1600px;padding:56px 60px 70px;
+  background-image:radial-gradient(#e6dfcf 1.2px,transparent 1.3px);background-size:26px 26px}
+.title{text-align:center;margin-bottom:10px;position:relative}
+.title h1{display:inline-block;font-family:'Permanent Marker',cursive;font-size:74px;letter-spacing:2px;padding:6px 40px 2px;position:relative;transform:rotate(-1.2deg)}
+.title h1::after{content:"";position:absolute;left:10px;right:10px;bottom:6px;height:26px;background:var(--y);z-index:-1;border-radius:40% 10% 35% 15%;transform:rotate(.8deg)}
+.title p{font-family:'Caveat',cursive;font-size:36px;margin-top:2px}
+.rough{position:relative}
+.rough::before{content:"";position:absolute;inset:0;border:3px solid var(--ink);border-radius:255px 18px 225px 18px/18px 225px 18px 255px;pointer-events:none}
+.grid{display:grid;gap:34px}
+.card{padding:22px 24px 22px;background:#fff;box-shadow:7px 8px 0 var(--sh,var(--y))}
+.card:nth-child(odd){transform:rotate(-.6deg)}.card:nth-child(even){transform:rotate(.7deg)}
+.card h2{font-family:'Permanent Marker',cursive;font-size:31px;line-height:1.1;display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.card h2 .num{flex:none;width:46px;height:46px;border:3px solid var(--ink);border-radius:50% 45% 52% 48%;display:grid;place-items:center;background:var(--sh,var(--y));font-size:24px}
+.item{display:flex;gap:14px;align-items:flex-start;margin:12px 0}
+.item svg{flex:none;width:58px;height:58px}
+.item div{font-size:26px;line-height:1.18}
+.item b{font-family:'Caveat',cursive;font-weight:700;font-size:33px;display:block;line-height:1}
+.hl{background:linear-gradient(transparent 55%,var(--hl,var(--y)) 55%);padding:0 3px}
+.arrow{font-family:'Caveat',cursive;font-size:28px;font-weight:700}
+.quote{font-family:'Caveat',cursive;font-size:36px;font-weight:700;text-align:center;padding:14px 20px;margin:4px 0 0}
+.tag{display:inline-block;font-family:'Caveat',cursive;font-weight:700;font-size:26px;padding:0 12px;margin:4px 6px 0 0;border:2.5px solid var(--ink);border-radius:20px 8px 18px 10px/10px 18px 8px 20px;background:#fff}
+.colhead{font-family:'Permanent Marker',cursive;font-size:44px;text-align:center;margin:26px 0 22px}
+.colhead span{padding:2px 26px;display:inline-block}
+.foot{text-align:center;font-family:'Caveat',cursive;font-size:26px;margin-top:40px;color:#555}
+.star{position:absolute;font-size:44px;font-family:'Permanent Marker',cursive}
+
+.root{margin:30px auto 0;width:1240px;padding:20px 30px;background:#fff;box-shadow:8px 9px 0 var(--r);transform:rotate(-.5deg);display:flex;align-items:center;gap:22px}
+.root svg{width:70px;height:70px;flex:none}
+.root b{font-family:'Permanent Marker',cursive;font-size:30px;display:block}
+.root div{font-size:30px;line-height:1.2}
+.tips{margin-top:14px;padding:12px 16px 10px;border:2.5px dashed #555;border-radius:14px 6px 16px 8px;background:#fffdf6}
+.tips h3{font-family:'Caveat',cursive;font-size:30px;font-weight:700;margin-bottom:2px}
+.tips li{font-size:23px;line-height:1.22;margin:4px 0 4px 22px}
+.road{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:8px;position:relative}
+.road::before{content:"";position:absolute;left:30px;right:30px;top:42px;border-top:4px dashed var(--ink)}
+.step{position:relative;text-align:center}
+.step .dot{width:84px;height:84px;margin:0 auto 10px;border:3px solid var(--ink);border-radius:52% 48% 50% 46%;background:var(--y);display:grid;place-items:center;font-family:'Permanent Marker',cursive;font-size:22px;line-height:1}
+.step b{font-family:'Caveat',cursive;font-size:30px;display:block}
+.step p{font-size:22px;line-height:1.2}
+.section{font-family:'Permanent Marker',cursive;font-size:40px;text-align:center;margin:50px 0 22px}
+.section span{padding:2px 24px;display:inline-block}
+ul.plain{list-style:none;padding:0}
+ul.plain li{font-size:24px;line-height:1.2;margin:8px 0;padding-left:30px;position:relative}
+ul.plain li::before{content:"\2713";position:absolute;left:0;font-family:'Permanent Marker',cursive}
+ul.warn li::before{content:"!";left:8px}
+</style></head><body>
+<header class="title"><h1>ACTION PLAN</h1><p>Assessors + Admin Team: uniform LMS results</p></header>
+
+<div class="rough root"><svg viewBox="0 0 64 64"><circle cx="30" cy="34" r="22" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="12" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="3" fill="#222"/><path d="M30 34L56 8M50 6l6 2 2 6" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Root cause</b>Trainers don't use a <span class="hl" style="--hl:var(--r)">uniform practice</span> to update the LMS with student results</div></div>
+<div class="section"><span class="rough" style="background:var(--y)">4 Actions</span></div>
+<div class="grid" style="grid-template-columns:1fr 1fr;align-items:start;gap:40px"><section class="card rough" style="--sh:var(--b);--hl:var(--b);"><h2><span class="num">1</span>Admin + Assessor Taskforce</h2><div class="item"><svg viewBox="0 0 64 64"><circle cx="22" cy="20" r="8" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="44" cy="22" r="7" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 54c2-12 8-18 16-18s14 6 16 18M34 38c3-3 6-4 10-4 7 0 12 6 14 18" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Work together</b>Better <span class='hl'>communication</span> between departments, <span class='hl'>continual improvement</span>, and it builds the toolkit</div></div><div class="tips"><h3>Make it work</h3><ul><li>A co-lead from <b>each</b> team; add a <b>QA</b> rep</li><li><b>Protected time</b>: meetings count as work, not extra</li><li>Fortnightly to start, then monthly</li><li>Include a voice from <b>remote / shift</b> staff</li><li>First jobs: define LMS statuses &amp; decide <b>who owns data entry</b></li></ul></div></section><section class="card rough" style="--sh:var(--p);--hl:var(--p);"><h2><span class="num">2</span>Assessor Toolkit</h2><div class="item"><svg viewBox="0 0 64 64"><rect x="6" y="22" width="52" height="32" rx="3" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 22v-8h20v8M6 34h52M28 30h8v8h-8z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Uniform practice</b><span class='hl'>Feedback template</span> + consistent assessment &amp; feedback procedure</div></div><div class="item"><svg viewBox="0 0 64 64"><path d="M6 44L44 6l14 14-38 38z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34l5 5M24 26l5 5M32 18l5 5M40 10l5 5" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Put the LMS steps in it</b>What each <span class='hl'>status</span> means, who updates it, <span class='hl'>within X days</span>, plus the escalation contact</div></div><div class="tips"><h3>Make it work</h3><ul><li><b>One home, one version</b>: owner, version no. &amp; review date (no more duplicates or old copies)</li><li>Pilot with a few assessors, then roll out</li><li>Keep it short: one page per process</li><li>Offline/printable copy for remote sites</li><li>Pair it with refreshed <b>aXcelerate training</b> &amp; onboarding for <b>new trainers</b></li></ul></div></section><section class="card rough" style="--sh:var(--o);--hl:var(--o);"><h2><span class="num">3</span>PD Rewards System (PDRS)</h2><div class="item"><svg viewBox="0 0 64 64"><circle cx="30" cy="34" r="22" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="12" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="3" fill="#222"/><path d="M30 34L56 8M50 6l6 2 2 6" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Team hits target</b><span class='arrow'>&rarr;</span> team <span class='hl'>chooses additional PD</span></div></div><div class="tips"><h3>Make it work</h3><ul><li><b>Baseline first</b>, then set realistic targets</li><li>Measure <b>speed + quality</b>: e.g. % results entered in X days <i>and</i> a QA sample against the toolkit</li><li>Keep required PD (industry currency / VET skills) <b>separate</b>, so rewards are truly extra</li><li>Adjust targets for <b>offline / remote</b> sites</li><li>Publish progress monthly so teams can see it</li></ul></div></section><section class="card rough" style="--sh:var(--v);--hl:var(--v);"><h2><span class="num">4</span>Recognition</h2><div class="item"><svg viewBox="0 0 64 64"><path d="M8 26v12h8l24 12V14L16 26z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 38l4 16h8l-4-14M48 24c4 2 4 14 0 16M54 18c8 6 8 22 0 28" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Toolbox talk shout-outs</b><span class='hl'>Every toolbox talk</span>: quick, specific thanks</div></div><div class="item"><svg viewBox="0 0 64 64"><path d="M18 8h28v14a14 14 0 0 1-28 0zM18 14H8c0 10 5 14 12 14M46 14h10c0 10-5 14-12 14M32 36v10M22 56h20l-2-10H24z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Awards night: every 6 months</b><span class='hl'>Effort &middot; Improvement &middot; Excellence</span>: staff feel valued and build industry credibility</div></div><div class="tips"><h3>Make it work</h3><ul><li>Tie categories to the goals (e.g. most improved LMS accuracy, best toolkit contribution)</li><li><b>Peer nominations</b> as well as manager picks</li><li>Timing that suits <b>shift &amp; remote</b> staff (or stream it)</li><li>Certificates staff can add to their CV / portfolio</li></ul></div></section></div>
+<div class="section"><span class="rough" style="background:var(--b)">Roadmap</span></div>
+<div class="road"><div class="step"><div class="dot">Month<br>0&ndash;1</div><b>Set up</b><p>Form taskforce &middot; pull LMS baseline &middot; explain the <i>why</i> to all staff</p></div><div class="step"><div class="dot">Month<br>1&ndash;3</div><b>Build</b><p>Agree LMS statuses &amp; procedure &middot; toolkit v1 pilot &middot; training refresh</p></div><div class="step"><div class="dot">Month<br>3</div><b>Launch</b><p>Toolkit rolled out &middot; PDRS targets live</p></div><div class="step"><div class="dot">Every<br>month</div><b>Run</b><p>Monthly report &middot; toolbox talks + shout-outs</p></div><div class="step"><div class="dot">Month<br>6</div><b>Celebrate &amp; review</b><p>1st awards night &middot; toolkit v2 &middot; reset targets</p></div></div>
+<div class="grid" style="grid-template-columns:1fr 1fr;align-items:start;gap:40px;margin-top:54px"><section class="card rough" style="--sh:var(--g);--hl:var(--g);"><h2><span class="num">&#10003;</span>How we'll know it's working</h2><ul class="plain"><li>% of results entered in the LMS within X days</li><li>Fewer submissions that <i>look unmarked</i></li><li>Fewer calls &amp; emails chasing results</li><li>QA audits: feedback consistent with the toolkit</li><li>Staff pulse survey: clarity, confidence, feeling valued</li></ul></section><section class="card rough" style="--sh:var(--r);--hl:var(--r);"><h2><span class="num">!</span>Watch-outs</h2><ul class="plain warn"><li><b>Workload</b>: give time, or uniform practice won't stick</li><li><b>Gaming</b>: speed targets without quality checks backfire</li><li><b>Free-riding</b>: mix team rewards with individual recognition</li><li><b>Change fatigue</b>: show early wins, keep it simple</li><li><b>Fairness</b>: remote, shift &amp; new staff included</li></ul></section></div>
+<div class="rough quote" style="margin:48px auto 0;width:1200px;background:var(--y);transform:rotate(-.6deg)">
+ Work together &rarr; one way of doing it &rarr; measure it &rarr; <u>celebrate it</u>
+</div>
+<p class="foot">Sketchnote &middot; action plan from the assessor &amp; admin team meetings</p>
+</body></html>

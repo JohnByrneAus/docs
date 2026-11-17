@@ -90,8 +90,8 @@ def page(title, sub, body, foot):
 
 def assessors():
     cards = [
-        card(1, "Learners &amp; Delivery", "b",
-             item("person", "Newbies", "New learners need <span class='hl'>extra support</span>")
+        card(1, "People &amp; Delivery", "b",
+             item("person", "Newbie trainers", "New trainers need <span class='hl'>more training + support</span>")
              + item("moon", "Shift workers", "Need a <span class='hl'>workplace assessor</span> <span class='arrow'>&rarr; takes time!</span>")
              + item("class", "F2F delivery", "Face-to-face sessions in the mix")),
         card(2, "Clarity", "p",

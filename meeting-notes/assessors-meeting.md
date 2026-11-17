@@ -23,8 +23,8 @@
 
 ## Summary by theme
 
-### Learners and delivery
-- **New learners ("newbies")** need extra support.
+### People and delivery
+- **New trainers ("newbies")** need more training and support.
 - **Shift workers** are assessed by a workplace assessor, which **takes time** to arrange.
 - **Face-to-face (F2F) delivery** is part of the picture.
 
@@ -46,6 +46,7 @@
 - Some may be an **old version**.
 
 ## Possible follow-ups
+- [ ] Set up onboarding, training and support (e.g. mentoring) for new trainers.
 - [ ] Write a standard assessment template and marking guide that states the feedback expected.
 - [ ] Look at moving data entry from assessors to the admin team.
 - [ ] Refresh aXcelerate / LMS training, then remove duplicated and outdated material.

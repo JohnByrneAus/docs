@@ -1,0 +1,93 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>AWARDS NIGHT</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=Permanent+Marker&display=swap');
+:root{--ink:#222;--paper:#fbf8f1;--y:#ffe27a;--b:#a9d8f5;--g:#b9e8a3;--p:#f7b6c8;--o:#ffc98b;--v:#d4c2f5;--r:#ff8f8f}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font-family:'Patrick Hand',cursive;width:1600px;padding:56px 60px 70px;
+  background-image:radial-gradient(#e6dfcf 1.2px,transparent 1.3px);background-size:26px 26px}
+.title{text-align:center;margin-bottom:10px;position:relative}
+.title h1{display:inline-block;font-family:'Permanent Marker',cursive;font-size:74px;letter-spacing:2px;padding:6px 40px 2px;position:relative;transform:rotate(-1.2deg)}
+.title h1::after{content:"";position:absolute;left:10px;right:10px;bottom:6px;height:26px;background:#f7b6c8;z-index:-1;border-radius:40% 10% 35% 15%;transform:rotate(.8deg)}
+.title p{font-family:'Caveat',cursive;font-size:36px;margin-top:2px}
+.rough{position:relative}
+.rough::before{content:"";position:absolute;inset:0;border:3px solid var(--ink);border-radius:255px 18px 225px 18px/18px 225px 18px 255px;pointer-events:none}
+.grid{display:grid;gap:34px}
+.card{padding:22px 24px 22px;background:#fff;box-shadow:7px 8px 0 var(--sh,var(--y))}
+.card:nth-child(odd){transform:rotate(-.6deg)}.card:nth-child(even){transform:rotate(.7deg)}
+.card h2{font-family:'Permanent Marker',cursive;font-size:31px;line-height:1.1;display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.card h2 .num{flex:none;width:46px;height:46px;border:3px solid var(--ink);border-radius:50% 45% 52% 48%;display:grid;place-items:center;background:var(--sh,var(--y));font-size:24px}
+.item{display:flex;gap:14px;align-items:flex-start;margin:12px 0}
+.item svg{flex:none;width:58px;height:58px}
+.item div{font-size:26px;line-height:1.18}
+.item b{font-family:'Caveat',cursive;font-weight:700;font-size:33px;display:block;line-height:1}
+.hl{background:linear-gradient(transparent 55%,var(--hl,var(--y)) 55%);padding:0 3px}
+.arrow{font-family:'Caveat',cursive;font-size:28px;font-weight:700}
+.quote{font-family:'Caveat',cursive;font-size:36px;font-weight:700;text-align:center;padding:14px 20px;margin:4px 0 0}
+.tag{display:inline-block;font-family:'Caveat',cursive;font-weight:700;font-size:26px;padding:0 12px;margin:4px 6px 0 0;border:2.5px solid var(--ink);border-radius:20px 8px 18px 10px/10px 18px 8px 20px;background:#fff}
+.colhead{font-family:'Permanent Marker',cursive;font-size:44px;text-align:center;margin:26px 0 22px}
+.colhead span{padding:2px 26px;display:inline-block}
+.foot{text-align:center;font-family:'Caveat',cursive;font-size:26px;margin-top:40px;color:#555}
+.star{position:absolute;font-size:44px;font-family:'Permanent Marker',cursive}
+
+body{position:relative}
+.pg{position:absolute;top:30px;right:44px;font-family:'Permanent Marker',cursive;font-size:24px;background:#fff;padding:6px 18px;transform:rotate(3deg)}
+.pg::before{border-width:2.5px}
+.fill{background:var(--bg)!important}
+.why{margin:26px auto 0;width:1300px;padding:18px 28px;background:#fff;box-shadow:8px 9px 0 var(--r);transform:rotate(-.5deg);display:flex;gap:22px;align-items:center}
+.why svg{width:66px;height:66px;flex:none}
+.why div{font-size:29px;line-height:1.22}
+.why b{font-family:'Permanent Marker',cursive;font-size:28px;display:block}
+.sec{font-family:'Permanent Marker',cursive;font-size:40px;text-align:center;margin:46px 0 22px}
+.sec span{padding:2px 24px;display:inline-block}
+.mini{font-size:24px;line-height:1.22}
+.mini b{font-family:'Caveat',cursive;font-size:30px}
+.when{display:inline-block;font-family:'Caveat',cursive;font-weight:700;font-size:26px;background:#fff;border:2.5px solid var(--ink);border-radius:18px 8px 16px 10px/10px 16px 8px 18px;padding:0 12px;margin:2px 0 6px}
+ul.dots{margin:6px 0 0 26px}
+ul.dots li{font-size:24px;line-height:1.22;margin:5px 0}
+.flow{display:flex;align-items:stretch;justify-content:center;gap:0;margin-top:10px}
+.flow .node{flex:1;text-align:center;padding:16px 12px 14px;box-shadow:6px 7px 0 var(--ink)}
+.flow .node svg{width:70px;height:70px}
+.flow .node b{font-family:'Permanent Marker',cursive;font-size:25px;display:block;margin:4px 0}
+.flow .node p{font-size:22px;line-height:1.2}
+.flow .arr{flex:none;width:70px;display:grid;place-items:center;font-family:'Permanent Marker',cursive;font-size:48px}
+.folders{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.folder{position:relative;padding:44px 14px 16px;text-align:center;border:3px solid var(--ink);border-radius:6px 14px 8px 12px;background:var(--bg)}
+.folder::before{content:"";position:absolute;top:-20px;left:-3px;width:46%;height:22px;border:3px solid var(--ink);border-bottom:none;border-radius:10px 14px 0 0;background:var(--bg)}
+.folder b{font-family:'Permanent Marker',cursive;font-size:24px;display:block;line-height:1.1}
+.folder p{font-size:22px;line-height:1.2;margin-top:6px}
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.role{padding:18px 16px;text-align:center;background:var(--bg);box-shadow:6px 7px 0 var(--ink)}
+.role:nth-child(odd){transform:rotate(-.8deg)}.role:nth-child(even){transform:rotate(.8deg)}
+.role svg{width:66px;height:66px}
+.role b{font-family:'Permanent Marker',cursive;font-size:23px;display:block;line-height:1.1;margin:4px 0 6px}
+.role p{font-size:22px;line-height:1.2}
+.triad{display:flex;justify-content:center;gap:30px;margin-top:20px}
+.blob{width:300px;padding:22px 10px;text-align:center;border:3px solid var(--ink);border-radius:50% 46% 52% 48%/48% 52% 46% 50%;background:var(--bg);font-family:'Permanent Marker',cursive;font-size:32px}
+.blob small{display:block;font-family:'Patrick Hand';font-size:22px;margin-top:4px}
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.stepc{display:flex;gap:14px;align-items:flex-start;padding:16px 16px;background:var(--bg);box-shadow:6px 7px 0 var(--ink)}
+.stepc .n{flex:none;width:52px;height:52px;border:3px solid var(--ink);border-radius:50% 46% 52% 48%;background:#fff;display:grid;place-items:center;font-family:'Permanent Marker',cursive;font-size:26px}
+.stepc p{font-size:23px;line-height:1.2}
+.stepc b{font-family:'Caveat',cursive;font-size:29px;display:block;line-height:1}
+.yesno{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:6px}
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.qa .q{padding:16px 20px;background:var(--bg);box-shadow:6px 7px 0 var(--ink)}
+.qa .q b{font-family:'Caveat',cursive;font-size:30px;display:block}
+.qa .q p{font-size:23px;line-height:1.22}
+</style></head><body>
+<div class="pg rough">Page 4 of 5</div>
+<header class="title"><h1>AWARDS NIGHT</h1><p>Innovation 3: Organisational Awards Night (OAN)</p></header>
+
+<div class="rough why" style="box-shadow:8px 9px 0 #f7b6c8"><svg viewBox="0 0 64 64"><path d="M18 8h28v14a14 14 0 0 1-28 0zM18 14H8c0 10 5 14 12 14M46 14h10c0 10-5 14-12 14M32 36v10M22 56h20l-2-10H24z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>What is it?</b>A night for <span class="hl" style="--hl:#f7b6c8">all staff across the RTO</span> to come together, celebrate achievements and recognise contributions towards our mission and vision.</div></div>
+<div class="sec"><span class="rough" style="background:#f7b6c8">Why we're doing it</span></div>
+<div class="roles"><div class="role rough" style="--bg:#fde0e8"><svg viewBox="0 0 64 64"><path d="M32 6l7 17 18 1-14 12 5 18-16-10-16 10 5-18L7 24l18-1z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Celebrate</b><p>achievements of individuals &amp; teams</p></div><div class="role rough" style="--bg:#fff3c4"><svg viewBox="0 0 64 64"><path d="M32 56S8 40 8 22c0-8 6-14 13-14 5 0 9 3 11 7 2-4 6-7 11-7 7 0 13 6 13 14 0 18-24 34-24 34z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Culture</b><p>a stronger, positive organisational culture</p></div><div class="role rough" style="--bg:#d9f5ef"><svg viewBox="0 0 64 64"><circle cx="22" cy="20" r="8" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="44" cy="22" r="7" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 54c2-12 8-18 16-18s14 6 16 18M34 38c3-3 6-4 10-4 7 0 12 6 14 18" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Collaborate</b><p>across departments</p></div><div class="role rough" style="--bg:#ffe6c9"><svg viewBox="0 0 64 64"><circle cx="30" cy="34" r="22" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="12" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="3" fill="#222"/><path d="M30 34L56 8M50 6l6 2 2 6" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Shared purpose</b><p>&amp; a sense of belonging</p></div></div>
+<div class="sec"><span class="rough" style="background:#ffe27a">How we'll make it happen</span></div>
+<div class="path"><div class="stepc rough" style="--bg:#fde0e8"><span class="n">1</span><p><b>Working group</b>Reps from different teams &amp; departments</p></div><div class="stepc rough" style="--bg:#ffe6c9"><span class="n">2</span><p><b>Purpose &amp; format</b>Agree objectives &amp; how the night runs</p></div><div class="stepc rough" style="--bg:#fff3c4"><span class="n">3</span><p><b>Award categories</b>Aligned to our values, mission &amp; vision</p></div><div class="stepc rough" style="--bg:#e2f6d8"><span class="n">4</span><p><b>Ask staff</b>What recognition matters to you?</p></div><div class="stepc rough" style="--bg:#d9f5ef"><span class="n">5</span><p><b>Budget</b>Venue, catering, awards &amp; other costs</p></div><div class="stepc rough" style="--bg:#dcf0fc"><span class="n">6</span><p><b>Logistics</b>Venue, invitations, nominations &amp; promotion</p></div><div class="stepc rough" style="--bg:#ece3fb"><span class="n">7</span><p><b>Fair nominations</b>Transparent, inclusive &amp; open to all staff</p></div><div class="stepc rough" style="--bg:#fde0e8"><span class="n">8</span><p><b>The program</b>Presentations celebrating teams &amp; individuals</p></div><div class="stepc rough" style="--bg:#ffe6c9"><span class="n">9</span><p><b>Feedback</b>Evaluate the impact &amp; improve next time</p></div></div>
+<div class="grid" style="grid-template-columns:1fr;margin-top:50px">
+<section class="card rough fill" style="--sh:#d4c2f5;--hl:#d4c2f5;--bg:#ece3fb;"><h2><span class="num" style="background:#d4c2f5">&#9733;</span>The long-term goal</h2><div class="item"><svg viewBox="0 0 64 64"><rect x="8" y="12" width="48" height="44" rx="4" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 24h48M20 6v12M44 6v12M18 34h6M30 34h6M42 34h6M18 44h6M30 44h6" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>An annual RTO event</b>Supporting <span class='hl'>staff engagement</span>, recognising positive contributions &amp; strengthening <span class='hl'>collaboration</span></div></div></section>
+</div>
+<div class="rough quote" style="margin:52px auto 0;width:1200px;background:#f7b6c8;transform:rotate(.6deg)">
+ Your effort matters. <u>Let's celebrate it together.</u>
+</div>
+<p class="foot">Staff update &middot; Assessment &amp; LMS improvement initiatives &middot; 4/5</p>
+</body></html>

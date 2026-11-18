@@ -1,0 +1,93 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>PD REWARDS</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=Permanent+Marker&display=swap');
+:root{--ink:#222;--paper:#fbf8f1;--y:#ffe27a;--b:#a9d8f5;--g:#b9e8a3;--p:#f7b6c8;--o:#ffc98b;--v:#d4c2f5;--r:#ff8f8f}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font-family:'Patrick Hand',cursive;width:1600px;padding:56px 60px 70px;
+  background-image:radial-gradient(#e6dfcf 1.2px,transparent 1.3px);background-size:26px 26px}
+.title{text-align:center;margin-bottom:10px;position:relative}
+.title h1{display:inline-block;font-family:'Permanent Marker',cursive;font-size:74px;letter-spacing:2px;padding:6px 40px 2px;position:relative;transform:rotate(-1.2deg)}
+.title h1::after{content:"";position:absolute;left:10px;right:10px;bottom:6px;height:26px;background:#ffc98b;z-index:-1;border-radius:40% 10% 35% 15%;transform:rotate(.8deg)}
+.title p{font-family:'Caveat',cursive;font-size:36px;margin-top:2px}
+.rough{position:relative}
+.rough::before{content:"";position:absolute;inset:0;border:3px solid var(--ink);border-radius:255px 18px 225px 18px/18px 225px 18px 255px;pointer-events:none}
+.grid{display:grid;gap:34px}
+.card{padding:22px 24px 22px;background:#fff;box-shadow:7px 8px 0 var(--sh,var(--y))}
+.card:nth-child(odd){transform:rotate(-.6deg)}.card:nth-child(even){transform:rotate(.7deg)}
+.card h2{font-family:'Permanent Marker',cursive;font-size:31px;line-height:1.1;display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.card h2 .num{flex:none;width:46px;height:46px;border:3px solid var(--ink);border-radius:50% 45% 52% 48%;display:grid;place-items:center;background:var(--sh,var(--y));font-size:24px}
+.item{display:flex;gap:14px;align-items:flex-start;margin:12px 0}
+.item svg{flex:none;width:58px;height:58px}
+.item div{font-size:26px;line-height:1.18}
+.item b{font-family:'Caveat',cursive;font-weight:700;font-size:33px;display:block;line-height:1}
+.hl{background:linear-gradient(transparent 55%,var(--hl,var(--y)) 55%);padding:0 3px}
+.arrow{font-family:'Caveat',cursive;font-size:28px;font-weight:700}
+.quote{font-family:'Caveat',cursive;font-size:36px;font-weight:700;text-align:center;padding:14px 20px;margin:4px 0 0}
+.tag{display:inline-block;font-family:'Caveat',cursive;font-weight:700;font-size:26px;padding:0 12px;margin:4px 6px 0 0;border:2.5px solid var(--ink);border-radius:20px 8px 18px 10px/10px 18px 8px 20px;background:#fff}
+.colhead{font-family:'Permanent Marker',cursive;font-size:44px;text-align:center;margin:26px 0 22px}
+.colhead span{padding:2px 26px;display:inline-block}
+.foot{text-align:center;font-family:'Caveat',cursive;font-size:26px;margin-top:40px;color:#555}
+.star{position:absolute;font-size:44px;font-family:'Permanent Marker',cursive}
+
+body{position:relative}
+.pg{position:absolute;top:30px;right:44px;font-family:'Permanent Marker',cursive;font-size:24px;background:#fff;padding:6px 18px;transform:rotate(3deg)}
+.pg::before{border-width:2.5px}
+.fill{background:var(--bg)!important}
+.why{margin:26px auto 0;width:1300px;padding:18px 28px;background:#fff;box-shadow:8px 9px 0 var(--r);transform:rotate(-.5deg);display:flex;gap:22px;align-items:center}
+.why svg{width:66px;height:66px;flex:none}
+.why div{font-size:29px;line-height:1.22}
+.why b{font-family:'Permanent Marker',cursive;font-size:28px;display:block}
+.sec{font-family:'Permanent Marker',cursive;font-size:40px;text-align:center;margin:46px 0 22px}
+.sec span{padding:2px 24px;display:inline-block}
+.mini{font-size:24px;line-height:1.22}
+.mini b{font-family:'Caveat',cursive;font-size:30px}
+.when{display:inline-block;font-family:'Caveat',cursive;font-weight:700;font-size:26px;background:#fff;border:2.5px solid var(--ink);border-radius:18px 8px 16px 10px/10px 16px 8px 18px;padding:0 12px;margin:2px 0 6px}
+ul.dots{margin:6px 0 0 26px}
+ul.dots li{font-size:24px;line-height:1.22;margin:5px 0}
+.flow{display:flex;align-items:stretch;justify-content:center;gap:0;margin-top:10px}
+.flow .node{flex:1;text-align:center;padding:16px 12px 14px;box-shadow:6px 7px 0 var(--ink)}
+.flow .node svg{width:70px;height:70px}
+.flow .node b{font-family:'Permanent Marker',cursive;font-size:25px;display:block;margin:4px 0}
+.flow .node p{font-size:22px;line-height:1.2}
+.flow .arr{flex:none;width:70px;display:grid;place-items:center;font-family:'Permanent Marker',cursive;font-size:48px}
+.folders{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.folder{position:relative;padding:44px 14px 16px;text-align:center;border:3px solid var(--ink);border-radius:6px 14px 8px 12px;background:var(--bg)}
+.folder::before{content:"";position:absolute;top:-20px;left:-3px;width:46%;height:22px;border:3px solid var(--ink);border-bottom:none;border-radius:10px 14px 0 0;background:var(--bg)}
+.folder b{font-family:'Permanent Marker',cursive;font-size:24px;display:block;line-height:1.1}
+.folder p{font-size:22px;line-height:1.2;margin-top:6px}
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.role{padding:18px 16px;text-align:center;background:var(--bg);box-shadow:6px 7px 0 var(--ink)}
+.role:nth-child(odd){transform:rotate(-.8deg)}.role:nth-child(even){transform:rotate(.8deg)}
+.role svg{width:66px;height:66px}
+.role b{font-family:'Permanent Marker',cursive;font-size:23px;display:block;line-height:1.1;margin:4px 0 6px}
+.role p{font-size:22px;line-height:1.2}
+.triad{display:flex;justify-content:center;gap:30px;margin-top:20px}
+.blob{width:300px;padding:22px 10px;text-align:center;border:3px solid var(--ink);border-radius:50% 46% 52% 48%/48% 52% 46% 50%;background:var(--bg);font-family:'Permanent Marker',cursive;font-size:32px}
+.blob small{display:block;font-family:'Patrick Hand';font-size:22px;margin-top:4px}
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.stepc{display:flex;gap:14px;align-items:flex-start;padding:16px 16px;background:var(--bg);box-shadow:6px 7px 0 var(--ink)}
+.stepc .n{flex:none;width:52px;height:52px;border:3px solid var(--ink);border-radius:50% 46% 52% 48%;background:#fff;display:grid;place-items:center;font-family:'Permanent Marker',cursive;font-size:26px}
+.stepc p{font-size:23px;line-height:1.2}
+.stepc b{font-family:'Caveat',cursive;font-size:29px;display:block;line-height:1}
+.yesno{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:6px}
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.qa .q{padding:16px 20px;background:var(--bg);box-shadow:6px 7px 0 var(--ink)}
+.qa .q b{font-family:'Caveat',cursive;font-size:30px;display:block}
+.qa .q p{font-size:23px;line-height:1.22}
+</style></head><body>
+<div class="pg rough">Page 5 of 5</div>
+<header class="title"><h1>PD REWARDS</h1><p>Innovation 4: Professional Development Rewards System (PDRS)</p></header>
+
+<div class="rough why" style="box-shadow:8px 9px 0 #ffc98b"><svg viewBox="0 0 64 64"><rect x="8" y="24" width="48" height="12" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 36v22h40V36M32 24v34M32 24c-6-12-18-12-16-4 1 4 10 4 16 4 6 0 15 0 16-4 2-8-10-8-16 4" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>What is it?</b>A reward system triggered when assessors meet their KPIs. <span class="hl" style="--hl:#ffc98b">Hit your monthly KPI and choose an extra PD activity.</span></div></div>
+<div class="sec"><span class="rough" style="background:#ffc98b">How it works</span></div>
+<div class="flow"><div class="node rough" style="background:#dcf0fc"><svg viewBox="0 0 64 64"><rect x="6" y="22" width="52" height="32" rx="3" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 22v-8h20v8M6 34h52M28 30h8v8h-8z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Follow the toolkit</b><p>orderly, current LMS records</p></div><div class="arr">&rarr;</div><div class="node rough" style="background:#e2f6d8"><svg viewBox="0 0 64 64"><circle cx="30" cy="34" r="22" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="12" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="34" r="3" fill="#222"/><path d="M30 34L56 8M50 6l6 2 2 6" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Hit your KPI</b><p>for the month</p></div><div class="arr">&rarr;</div><div class="node rough" style="background:#ffe6c9"><svg viewBox="0 0 64 64"><rect x="8" y="24" width="48" height="12" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 36v22h40V36M32 24v34M32 24c-6-12-18-12-16-4 1 4 10 4 16 4 6 0 15 0 16-4 2-8-10-8-16 4" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Choose extra PD</b><p>your pick, on top of baseline PD</p></div></div>
+<div class="sec"><span class="rough" style="background:#ffe27a">Paying for it</span></div>
+<p class="mini" style="text-align:center;font-size:27px;margin-bottom:22px">Each PD activity has a set <b>price range</b>.</p>
+<div class="yesno"><section class="card rough fill" style="--sh:#b9e8a3;--hl:#b9e8a3;--bg:#e2f6d8;"><h2><span class="num" style="background:#b9e8a3">&#10003;</span>Within the price range?</h2><div class="item"><svg viewBox="0 0 64 64"><path d="M32 6l7 17 18 1-14 12 5 18-16-10-16 10 5-18L7 24l18-1z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Go for it!</b>Book your PD activity</div></div></section><section class="card rough fill" style="--sh:#ffe27a;--hl:#ffe27a;--bg:#fff3c4;"><h2><span class="num" style="background:#ffe27a">$</span>Costs more than the allowance?</h2><div class="item"><svg viewBox="0 0 64 64"><path d="M10 34c0-10 10-18 22-18 8 0 14 3 18 8h6v10h-4c-1 4-3 7-6 9v7h-8v-4h-12v4h-8v-8c-5-2-8-5-8-8z" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 16v-6M24 10h8M44 30v.1" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Bank it</b>Save your incentive and combine it later</div></div><div class="item"><svg viewBox="0 0 64 64"><ellipse cx="32" cy="32" rx="22" ry="22" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 22c-2-2-4-3-7-3-4 0-7 2-7 6 0 8 15 4 15 12 0 4-3 6-8 6-3 0-6-1-8-3M31 14v6M31 44v6" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Or pay the difference</b>Top it up yourself</div></div></section></div>
+<div class="sec"><span class="rough" style="background:#a9d8f5">Quick Q&amp;A</span></div>
+<div class="qa"><div class="q rough" style="--bg:#dcf0fc"><b>Who is it for?</b><p>Assessors who meet their monthly Key Performance Indicators (KPIs).</p></div><div class="q rough" style="--bg:#ece3fb"><b>Does it replace my PD?</b><p>No. It's <strong>in addition to</strong> your baseline PD requirements &amp; entitlements.</p></div><div class="q rough" style="--bg:#d9f5ef"><b>Does it have to relate to my job?</b><p>No. It's <strong>your choice</strong>, and it may not be directly related to your position.</p></div><div class="q rough" style="--bg:#fde0e8"><b>Why are we doing this?</b><p>To reward following the toolkit and keeping <strong>orderly, current LMS records</strong>.</p></div></div>
+<div class="rough quote" style="margin:52px auto 0;width:1200px;background:#ffc98b;transform:rotate(-.6deg)">
+ Good records &rarr; KPI met &rarr; <u>PD you choose</u>
+</div>
+<p class="foot">Staff update &middot; Assessment &amp; LMS improvement initiatives &middot; 5/5</p>
+</body></html>

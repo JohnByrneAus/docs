@@ -17,3 +17,7 @@ The sketchnotes are built from `sketchnotes/build.py` and `sketchnotes/action_pl
 5. [PD Rewards System](sketchnotes/staff-comms-5-pdrs.png)
 
 All pages in one file: [staff-comms-all-pages.pdf](sketchnotes/staff-comms-all-pages.pdf). Built from `sketchnotes/staff_comms.py`.
+
+## Peer interview
+
+- [Peer interview minutes (18 Nov 2026)](peer-interview-minutes.md)
